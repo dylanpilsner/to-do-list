@@ -1,0 +1,13 @@
+{
+  "name": "list",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.2.1"
+  },
+  "scripts": {
+    "dev": "parcel serve ./src/index.html",
+    "build": "parcel build ./src/index.html --dist-dir build",
+    "deploy": "gh-pages -d build"
+  }
+}
