@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "license": "MIT",
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "parcel": "^2.2.1"
   },
   "scripts": {
     "dev": "parcel serve ./src/index.html",
-    "build": "parcel build ./src/index.html --dist-dir build",
-    "deploy": "gh-pages -d build"
+    "build": "parcel build ./src/index.html --dist-dir build --public-url /to-do-list",
+    "deploy": "gh-pages -d build",
+    "build-and-deploy": "npm run build && npm run deploy"
   }
 }
