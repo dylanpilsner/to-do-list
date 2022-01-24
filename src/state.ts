@@ -4,7 +4,9 @@ export { state };
 
 const state = {
   data: {
-    tasks: [],
+    tasks: [
+      "Bienvenido! Podés agregar una nota, marcarla como realizada, o eliminarla.",
+    ],
   },
   listeners: [],
 
